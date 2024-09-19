@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout - Precise</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1C1C1E;
+            color: white;
+            margin: 0;
+            padding: 0;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); 
+            grid-template-rows: repeat(3, 1fr);  
+            gap: 15px;
+            height: 100vh; 
+            padding: 20px;
+        }
+
+        .container {
+            background-color: #2C2C2E;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+        }
+
+        .A {
+            grid-column: 1 / 3; 
+        }
+        .B {
+            grid-column: 3 / 4; 
+            grid-row: 1 / 3;   
+        }
+        .C {
+            grid-column: 1 / 2; 
+            grid-row: 2;       
+        }
+        .D {
+            grid-column: 2 / 3; 
+            grid-row: 2;      
+        }
+        .E {
+            grid-column: 1 / 2; 
+            grid-row: 3;        
+        }
+        .F {
+            grid-column: 2 / 3; 
+            grid-row: 3;        
+        }
+        .G {
+            grid-column: 3 / 4; 
+            grid-row: 3;        
+        }
+        .H {
+            grid-column: 2 / 2; 
+            grid-row: 2;       
+        }
+        .I {
+            grid-column: 3 / 4; 
+            grid-row: 3;       
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container A">A</div>
+    <div class="container B">B</div>
+    <div class="container C">C</div>
+    <div class="container D">D</div>
+    <div class="container E">E</div>
+    <div class="container F">F</div>
+    <div class="container G">G</div>
+    <div class="container H">H</div>
+    <div class="container I">I</div>
+
+</body>
+</html>
